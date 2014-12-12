@@ -1,20 +1,8 @@
-Haskell Syntax/Indentation
+Haskell Indentation
 ==========================
 
-I was unhappy with the Haskell scripts that are
-shipped with vim, therefore I decided to make my
-own based on [idris-vim][].
-
-I hope you find this useful.
-
-![Screenshot](http://raichoo.github.io/images/haskell-vim.png)
-
-## Features
-
-* Covers a broader spectrum of keywords
-* Highlighting for new features like type families, pattern synonyms, arrow syntax, recursive do, role annotations, QuasiQuotation
-* More contextual highlighting (e.g. highlight 'as' or 'family' only in approriate places)
-* Smarter indentation
+I'm fond of the indentation mode from raichoo's [Haskell-Vim][haskell-vim], but
+I wanted to use a different syntax highlighter.
 
 ## Installation
 
@@ -37,19 +25,6 @@ Be sure that the following lines are in your
     filetype plugin indent on
 
 ## Configuration
-
-### Features
-
-To enable the features you would like to use, just add the according line to your
-`.vimrc`.
-
-* `let g:haskell_enable_quantification = 1` to enable highlighting of `forall`
-* `let g:haskell_enable_recursivedo = 1` to enable highlighting of `mdo` and `rec`
-* `let g:haskell_enable_arrowsyntax = 1` to enable highlighting of `proc`
-* `let g:haskell_enable_pattern_synonyms = 1` to enable highlighting of `pattern`
-* `let g:haskell_enable_typeroles = 1` to enable highlighting of type roles
-
-### Indentation
 
 To configure indentation in `haskell-vim` you can use the following variables to change indentation depth, just add the according line to your `.vimrc`.
 
@@ -88,3 +63,4 @@ To configure indentation in `haskell-vim` you can use the following variables to
 
 [Pathogen]: https://github.com/tpope/vim-pathogen
 [idris-vim]: https://github.com/idris-hackers/idris-vim
+[haskell-vim]: https://github.com/raichoo/haskell-vim
